@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: #fff;
+}
+
+.main{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-bottom: 10px solid #222;
+    position: relative;
+    
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 34px;
+
+}
+
+.logo img{
+    width: 150px;
+}
+
+.nav-buttons button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 17px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-left: 2rem;
+    cursor: pointer;
+    line-height: normal;
+}
+
+#language-btn{
+    background: transparent;
+    border: solid 1px #fff;
+    text-align: center;
+}
+
+.language-dropdown{
+    display: none;
+    background-color: #fff;
+    color:#000;
+    width: 107.525px;
+    position: absolute;
+    right: 170.5px;
+    border-radius: 3px;
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.language-dropdown p:hover{
+    background-color: aqua;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+.down-icon{
+    width: 10px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+
+
+.header{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -50px;
+    
+}
+
+.header h1{
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight:500;
+}
+
+.header h3{
+    font-size: 1.625rem;
+    margin: 1rem;
+    font-weight: 400;
+}
+.header p{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    padding: 7px 10px;
+    width: 50%;
+}
+
+.search-bar form{
+    display: flex;
+    width: 100%;
+}
+
+.search{
+    flex-basis: 70%;
+    padding: 20px 0;
+    padding-left: 15px;
+    padding-right: 7px;
+    font-size: 16px;
+    border: none;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.search-btn{
+    flex-basis: 30%;
+    padding: 20px 0;
+    background: #db0001;
+    font-size: 1.875rem;
+    color: #fff;
+    border: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.search-btn:hover{
+    background: #f40612;
+    box-shadow: 0 1px 0 rgba(0,0,0,.45);
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+}
+
+.ftr{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 10px solid #222;
+    padding: 0 50px;
+    height: 63%;
+}
+
+.feature-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px 45px;
+}
+
+.feature-div h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.feature-div h3{
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 0.75em 0 0.25em;
+}
+
+.feature-content{
+    flex-basis: 35%;
+}
+
+.feature-img{
+    flex-basis: 35%;
+}
+
+.feature-img img{
+    width: 100%;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.faq-heading h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    margin: 3rem 0 0.4em;
+    font-weight: 500;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 52px auto;
+}
+
+.question{
+    background-color: #333;
+    margin: 8px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 71px;
+    align-items: center;
+    padding: 0 30px;
+    font-weight: 400;
+    font-size: 1.625rem;
+}
+
+.faq-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 10px solid #222;
+    padding-bottom: 70px;
+}
+
+.faq-input p{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    width: 70%;
+    color: #737373;
+    margin: 0 auto;
+    padding: 70px 45px 0 45px;
+    font-size: 13px;
+}
+
+.footer-heading{
+    color: #737373;
+    font-size: 1em
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col p{
+    margin: 10px 0;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.bottom button{
+    margin-left: 0;
+}
+
+#foot-note {
+    font-size: 13px;
+    margin-bottom: 13px;
+    padding-top: 20px;
+
+}
+
+.answer{
+    /* width: 815px; */
+    height: 0;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    padding: 0rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    visibility: collapse;
+    
+}
+
+
+@media screen and (max-width: 1024px){
+    .answer{
+        width: 100%;
+    }
+    .header h1{
+        font-size: 2rem;
+        line-height: 1.1;
+        font-weight:700;
+    }
+    .header h3{
+        margin: 1rem 0 0;
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .header p{
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
+        text-align: center;
+    }
+    .search-bar form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search{
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+    .search-btn{
+        width: 40vw;
+    }
+    .feature-div{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .feature-div h1{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .feature-div h3{
+        margin: 1rem 0 0;
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+    .feature-img{
+        width: 90%;
+    }
+    .header{
+        top: 0;
+        bottom: 0;
+        height: 50vh;
+    }
+    .faq-heading{
+       text-align: center;
+       font-size: 2rem;
+       font-weight: 700;
+    }
+    .questions{
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .faq-input p{
+        text-align: center;
+    }
+    .footer{
+        flex-direction: column;
+        padding-left: 0;
+    }
+}
