@@ -378,3 +378,25 @@ body{
         padding-left: 0;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .logo img{
+        height: 100%;
+        
+    }
+    .header{
+        height: 100%;
+    }
+    .main{
+        height: 100vh;
+    }
+    .nav{
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .nav-buttons button{
+        margin-left: 1rem;
+        padding: 5px 13px;
+    }
+}
